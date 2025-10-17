@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:elevation="@null" app:cardElevation="@null">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rec_brown" android:layout_marginStart="25dp" android:layout_marginEnd="25dp">
+
+        <!-- Plant Image -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:elevation="@null"
+        >
+
+            <ImageView
+                    android:id="@+id/trashedPlantImage"
+                    android:layout_width="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_height="100dp"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/pechay"
+            />
+            <TextView
+                    android:id="@+id/soilhealth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soil Health:"
+                    android:textSize="12dp"
+                    android:textColor="@color/ddb"
+                    app:layout_constraintTop_toBottomOf="@+id/trashedPlantName" app:layout_constraintStart_toStartOf="parent"
+                    android:fontFamily="@font/poppinsbold" android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"/>
+            <TextView
+                    android:id="@+id/trashedPlantName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Name"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/g" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/fredokabold"
+                    android:layout_marginTop="25dp" android:layout_marginStart="25dp"/>
+            <TextView
+                    android:text="60%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/trashedSoilHealth"
+                    app:layout_constraintStart_toEndOf="@+id/soilhealth"
+                    app:layout_constraintTop_toTopOf="@+id/soilhealth"
+                    app:layout_constraintBottom_toBottomOf="@+id/soilhealth" android:fontFamily="@font/poppinsbold"
+                    android:layout_marginStart="5dp" android:textColor="@color/ddb" android:textSize="12dp"/>
+            <ImageButton
+                    android:layout_height="30dp" android:layout_width="30dp"
+                    app:srcCompat="@drawable/ic_restore"
+                    android:id="@+id/restorePlant"
+                    android:background="@android:color/transparent" android:scaleType="fitCenter"
+                    android:layout_gravity="center_vertical|end"
+                    app:tint="@color/g" android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="13dp" android:layout_marginEnd="13dp" android:elevation="30dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Plant Name -->
+
+        <!-- Plant Description -->
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

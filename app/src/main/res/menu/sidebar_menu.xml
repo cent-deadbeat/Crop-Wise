@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_plants"
+                android:icon="@drawable/plant_icon"
+                android:title="MY PLANTS"
+                app:showAsAction="always"
+                android:contentInsetStart="0dp"
+                android:contentInsetLeft="0dp"
+                android:contentInsetEnd="0dp"
+                android:contentInsetRight="0dp"
+                android:checkable="true"
+                android:enabled="true"
+        />
+        <item
+                android:id="@+id/nav_my_acc"
+                android:icon="@drawable/account"
+                android:title="MY ACCOUNT"
+                android:layout_marginTop="12dp"
+                app:showAsAction="always"
+                android:contentInsetStart="0dp"
+                android:contentInsetLeft="0dp"
+                android:contentInsetEnd="0dp"
+                android:contentInsetRight="0dp"
+                android:checkable="true"
+                android:enabled="true"
+        />
+        <item
+                android:id="@+id/nav_guide"
+                android:icon="@drawable/guide"
+                android:title="USER GUIDE"
+                android:layout_marginTop="100dp"
+                app:showAsAction="always"
+                android:contentInsetStart="0dp"
+                android:contentInsetLeft="0dp"
+                android:contentInsetEnd="0dp"
+                android:contentInsetRight="0dp"
+                android:checkable="true"
+                android:enabled="true"/>
+        <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/help"
+                android:title="HELP"
+                app:showAsAction="always"
+                android:contentInsetStart="0dp"
+                android:contentInsetLeft="0dp"
+                android:contentInsetEnd="0dp"
+                android:contentInsetRight="0dp"
+                android:checkable="true"
+                android:enabled="true"/>
+        <item
+                android:id="@+id/div1"
+                android:icon="@android:color/transparent"
+                android:title=""
+                android:enabled="false"
+                android:checkable="false"
+                app:showAsAction="never"/>
+        <item
+                android:id="@+id/div2"
+                android:icon="@android:color/transparent"
+                android:title=""
+                android:enabled="false"
+                android:checkable="false"
+                app:showAsAction="never"/>
+
+
+        <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="LOGOUT"
+                android:enabled="true"
+                android:checkable="true"
+                app:showAsAction="always"/>
+    </group>
+
+
+</menu>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="16dp"
+              android:background="@drawable/rounded_dialog_bg">
+
+    <!-- Title -->
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms and Conditions"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp"
+            android:textColor="@color/black"/>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingBottom="16dp">
+
+        <TextView
+                android:id="@+id/termsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_and_conditions"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/black"/>
+    </ScrollView>
+
+    <!-- Agree Button -->
+    <Button
+            android:id="@+id/agreeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agree"
+            android:backgroundTint="@color/g"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"/>
+</LinearLayout>

@@ -1,0 +1,331 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:background="@color/white" android:paddingTop="16dp" android:paddingBottom="16dp"
+>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <!-- Mesophyte Image -->
+        <TextView
+                android:text="Mesophytes (Moderate-water plants)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textSize="17dp"
+                android:fontFamily="@font/fredokabold" android:textColor="@color/dg" android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp" android:layout_marginStart="17dp" android:layout_marginEnd="17dp"/>
+
+        <ImageView
+                android:id="@+id/plant_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="10dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="Xerophyte plant example"
+                tools:src="@drawable/img2" android:layout_marginStart="17dp" android:layout_marginEnd="17dp"/> <!-- Preview only -->
+        <!-- Moisture Range -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recommended Soil Moisture: 20-50%"
+                android:textColor="@color/dg"
+                android:id="@+id/s_moisture"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredokabold"
+                android:layout_marginBottom="8dp" android:layout_marginStart="17dp" android:layout_marginEnd="17dp"/>
+
+        <!-- Description -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mesophytes (from Greek 'mésos' meaning middle) are land plants thriving in moderate climates - neither too wet nor too dry. They represent the middle ground between water-loving hydrophytes and drought-resistant xerophytes, making them the most common plant type worldwide."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginBottom="16dp" android:layout_marginStart="17dp" android:layout_marginEnd="17dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This diverse group includes most flowering plants, common trees, shrubs, herbs, and agricultural crops. They flourish in temperate to warm climates with balanced soil moisture, making them ideal for home gardens and urban landscaping."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular" android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <!-- Dropdown Header -->
+        <LinearLayout
+                android:id="@+id/dropdown_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="17dp"
+                android:gravity="center_vertical" android:paddingTop="16dp" android:paddingBottom="16dp"
+                android:paddingStart="10dp" android:paddingEnd="10dp">
+
+            <TextView
+                    android:id="@+id/dropdown_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="List of Plants"
+                    android:textColor="@color/dg"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/fredokabold"/>
+
+            <ImageView
+                    android:id="@+id/dropdown_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_dropdown_svgrepo_com"
+                    app:tint="@color/dg"/>
+        </LinearLayout>
+
+        <!-- Plant List (initially hidden) -->
+        <LinearLayout
+                android:id="@+id/plants_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginHorizontal="17dp"
+                android:paddingBottom="16dp" android:layout_marginBottom="20dp" android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/caring"
+                android:text="Caring for moderate water plants"
+                android:textColor="@color/dg"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredokabold"
+                android:layout_marginBottom="8dp" android:layout_marginStart="17dp" android:layout_marginEnd="17dp"
+                android:layout_marginTop="16dp"/>
+
+        <!-- Description -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plants have varying water needs depending on their species, and getting the amount right is crucial for their health. A common mistake many gardeners make is overwatering their plants, which leads to problems like root rot from waterlogged soil and mold growth from moisture sitting on leaves. When soil stays too wet, the plant's roots can't get the oxygen they need to survive. On the flip side, underwatering causes just as many issues by preventing plants from absorbing nutrients properly, eventually making roots dry and brittle to the point where the plant can't recover. The best way to water correctly involves understanding your specific plant type along with your local climate conditions, soil composition, and garden layout, as these all influence how much water your plants actually require."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginBottom="16dp" android:layout_marginStart="17dp" android:layout_marginEnd="17dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tips"
+                android:textColor="@color/dg"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredokabold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <!-- Fix Your Soil -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fix Your Soil"
+                android:textColor="@color/dg"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredokabold"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mix in compost or old leaves to help soil hold water better. Do this every year."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <!-- Water the Roots Directly -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Water the Roots Directly"
+                android:textColor="@color/dg"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredokabold"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use soaker hoses or drip lines (like a slow leak) instead of sprinklers. Less water wasted!"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <!-- Cover the Ground -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cover the Ground"
+                android:textColor="@color/dg"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredokabold"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spread mulch (like straw or wood chips) to keep soil moist longer and stop weeds."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <!-- Use Rainwater -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use Rainwater"
+                android:textColor="@color/dg"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredokabold"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Collect rain in barrels—it's free and plants love it!"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <!-- Pick the Right Plants -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pick the Right Plants"
+                android:textColor="@color/dg"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredokabold"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose plants that naturally grow well in your area—they'll need less extra water."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <!-- Cut Back on Lawn -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cut Back on Lawn"
+                android:textColor="@color/dg"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredokabold"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grass drinks a lot. Try easy plants like clover or gravel paths instead."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <!-- Plan Smart -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plan Smart"
+                android:textColor="@color/dg"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredokabold"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Put thirsty plants together and near your water source. Saves time!"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <!-- Keep Plants Healthy -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keep Plants Healthy"
+                android:textColor="@color/dg"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredokabold"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pull weeds, trim plants, and watch for bugs. Healthy plants handle dry times better."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+    </LinearLayout>
+</ScrollView>

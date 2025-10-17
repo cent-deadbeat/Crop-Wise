@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter OTP"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"/>
+
+    <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the OTP sent to your phone number"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp"/>
+
+    <EditText
+            android:id="@+id/otpInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter OTP"
+            android:inputType="number"
+            android:maxLength="6"
+            android:gravity="center"/>
+
+    <TextView
+            android:id="@+id/timerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend OTP in 60 seconds"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="8dp"
+            android:visibility="gone"/>
+
+    <Button
+            android:id="@+id/resendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resend OTP"
+            android:backgroundTint="@color/g"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:enabled="false"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:gravity="end">
+        <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Cancel"
+                android:backgroundTint="@android:color/transparent"
+                android:textColor="@color/dg"
+                android:layout_marginTop="16dp" android:paddingStart="10dp" android:paddingEnd="10dp"
+                android:layout_margin="8dp" android:textSize="12dp"/>
+        <Button
+                android:id="@+id/verifyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Verify"
+                android:backgroundTint="@color/g"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp" android:paddingStart="10dp" android:paddingEnd="10dp"
+                android:layout_margin="8dp" android:textSize="12dp"/>
+    </LinearLayout>
+
+</LinearLayout>

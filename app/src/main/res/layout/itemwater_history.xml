@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:elevation="@null" app:cardElevation="@null" app:cardBackgroundColor="@android:color/transparent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp" android:background="@drawable/watered_rec">
+
+        <!-- Plant Image -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:elevation="@null"
+                android:padding="16dp">
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            >
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp" app:srcCompat="@drawable/water_check"
+                            android:id="@+id/imageView10" android:layout_weight="0"/>
+                    <TextView
+                            android:id="@+id/plantName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Watered"
+                            android:textSize="17dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/g"
+                            android:fontFamily="@font/fredokabold"
+                            android:paddingStart="7dp"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                    <TextView
+                            android:text="Time:"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content" android:id="@+id/textView13"
+                            android:fontFamily="@font/poppinsmedium" android:textColor="@color/g"
+                            android:textSize="12dp" android:layout_marginEnd="10dp"/>
+                    <TextView
+                            android:text="Date:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView15"
+                            android:layout_weight="1" android:fontFamily="@font/poppinsmedium"
+                            android:textColor="@color/g" android:textSize="12dp"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:layout_marginTop="3dp">
+                    <TextView
+                            android:text="4:55 pm"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content" android:id="@+id/time"
+                            android:fontFamily="@font/poppinsregular" android:textColor="@color/g"
+                            android:textSize="12dp" android:layout_marginEnd="10dp"/>
+                    <TextView
+                            android:text="Friday, 14 Feb, 2025"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/date"
+                            android:layout_weight="1" android:fontFamily="@font/poppinsregular"
+                            android:textColor="@color/g" android:textSize="12dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <CheckBox
+                    android:id="@+id/historyCheckBox"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center_vertical|end"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="5dp" android:elevation="20dp" android:textColorHighlight="@color/g"
+                    android:textColorLink="@color/g" app:useMaterialThemeColors="false"
+                    android:textColorHint="@color/g" android:textColor="@color/g"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "866621014283",
+    "project_id": "soilmate-1b770",
+    "storage_bucket": "soilmate-1b770.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866621014283:android:876d9456b34ee1b6bd620e",
+        "android_client_info": {
+          "package_name": "com.example.soilmate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCc9v3Xp-1GQgdKvDMD7pTh-n6R214G2ZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

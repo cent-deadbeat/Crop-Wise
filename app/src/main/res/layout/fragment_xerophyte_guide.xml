@@ -1,0 +1,262 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingBottom="16dp" android:paddingTop="16dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+    >
+
+        <!-- Xerophyte Image -->
+        <TextView
+                android:text="Xerophytes (Drought-tolerant plants)"
+                android:layout_width="match_parent"
+                android:layout_height="18dp" android:id="@+id/textView28" android:textSize="17dp"
+                android:fontFamily="@font/fredokabold" android:textColor="@color/dg" android:layout_marginTop="8dp"
+                android:layout_marginStart="17dp" android:layout_marginEnd="17dp" android:layout_marginBottom="16dp"/>
+
+        <!-- In your fragment_xerophyte_guide.xml -->
+        <ImageView
+                android:id="@+id/plant_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="10dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="Xerophyte plant example"
+                tools:src="@drawable/img2" android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/> <!-- Preview only -->
+        <!-- Moisture Range -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/s_moisture"
+                android:text="Optimal Soil Moisture: 10-30%"
+                android:textColor="@color/dg"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredokabold"
+                android:layout_marginBottom="8dp" android:layout_marginStart="17dp" android:layout_marginEnd="17dp"/>
+
+        <!-- Description -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Xerophytes (from Greek 'xēros' meaning dry) are plants superbly adapted to arid conditions. While naturally found in deserts, these resilient plants also thrive in rock gardens, containers, and even as low-maintenance houseplants."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginBottom="16dp" android:layout_marginStart="17dp" android:layout_marginEnd="17dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Their remarkable drought resistance comes from specialized features like water-storing tissues, reduced leaf surfaces, and deep root systems. Common examples include cacti, succulents, and certain aromatic herbs that prefer dry conditions between watering."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular" android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <!-- Dropdown Header -->
+        <LinearLayout
+                android:id="@+id/dropdown_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="17dp"
+                android:gravity="center_vertical" android:paddingTop="16dp" android:paddingBottom="16dp"
+                android:paddingStart="10dp" android:paddingEnd="10dp">
+
+            <TextView
+                    android:id="@+id/dropdown_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="List of Plants"
+                    android:textColor="@color/dg"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/fredokabold"/>
+
+            <ImageView
+                    android:id="@+id/dropdown_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_dropdown_svgrepo_com"
+                    app:tint="@color/dg"/>
+        </LinearLayout>
+
+        <!-- Plant List (initially hidden) -->
+        <LinearLayout
+                android:id="@+id/plants_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginHorizontal="17dp"
+                android:paddingBottom="16dp" android:layout_marginBottom="20dp" android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/caring"
+                android:text="Caring for drought-tolerant plants"
+                android:textColor="@color/dg"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredokabold"
+                android:layout_marginBottom="8dp" android:layout_marginStart="17dp" android:layout_marginEnd="17dp"
+                android:layout_marginTop="16dp"/>
+
+        <!-- Description -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Even drought-resistant plants require regular watering during their initial growth phase to establish strong roots. However, once established, they can endure extended dry spells—sometimes weeks or even an entire season—between deep waterings. These hardy plants flourish with significantly less water than many gardeners typically use. Additional factors like proper soil preparation, mulching, and weed management further enhance their ability to thrive in arid conditions."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginBottom="16dp" android:layout_marginStart="17dp" android:layout_marginEnd="17dp"/>
+
+        <!-- Tips Section Header -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tips"
+                android:textColor="@color/dg"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredokabold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <!-- Weed Control -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weed Control"
+                android:textColor="@color/dg"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredokabold"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weeds steal water and nutrients from plants. Remove them early by hand or mulch. Avoid herbicides unless necessary."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <!-- Fertilizing -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fertilizing"
+                android:textColor="@color/dg"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredokabold"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Most drought-tolerant plants don't need fertilizer. Test soil first. Use compost for slow nutrients. Over-fertilizing harms plants."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <!-- Pruning -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pruning"
+                android:textColor="@color/dg"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredokabold"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cut back overgrown branches and dead flowers to keep plants healthy. Divide crowded plants every few years."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <!-- Pests & Diseases -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pests and Diseases"
+                android:textColor="@color/dg"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredokabold"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Healthy plants resist pests. Clean up debris and avoid overwatering. Identify pests before treating."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <!-- Key Rule -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Key Rule"
+                android:textColor="@color/dg"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredokabold"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose the right plants for your area to reduce maintenance."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"/>
+    </LinearLayout>
+</ScrollView>

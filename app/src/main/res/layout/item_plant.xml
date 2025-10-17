@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:elevation="@null" app:cardElevation="@null">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rec_brown" android:layout_marginStart="25dp" android:layout_marginEnd="25dp">
+
+        <!-- Plant Image -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:elevation="@null"
+        >
+
+            <CheckBox
+                    android:id="@+id/plantCheckBox"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center_vertical|end"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="15dp" android:elevation="20dp" android:layout_marginTop="15dp"
+                    android:textColorHighlight="@color/g" android:textColorLink="@color/g"
+                    app:useMaterialThemeColors="false" android:textColorHint="@color/g" android:textColor="@color/g"/>
+            <ImageView
+                    android:id="@+id/plantImage"
+                    android:layout_width="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_height="100dp"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/pechay"/>
+            <TextView
+                    android:id="@+id/plantName"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Name"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/g" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/fredokabold"
+                    android:layout_marginTop="25dp" android:layout_marginStart="25dp"
+            />
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/plantName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="25dp" android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="25dp">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                    <TextView
+                            android:text="Soil Health:"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content" android:id="@+id/val7" android:textSize="12dp"
+                            android:fontFamily="@font/fredokabold" android:textColor="@color/ddb"/>
+                    <TextView
+                            android:text="76%"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/phosphorus_val"
+                            android:fontFamily="@font/fredokabold"
+                            android:textColor="@color/ddb" android:textSize="12dp"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:layout_marginTop="5dp">
+                    <TextView
+                            android:text="Last Saved:"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content" android:id="@+id/val8" android:textSize="12dp"
+                            android:fontFamily="@font/fredokabold" android:textColor="@color/ddb"/>
+                    <TextView
+                            android:text="02/03/04"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/lastsaved_val"
+                            android:fontFamily="@font/fredokabold"
+                            android:textColor="@color/ddb" android:textSize="12dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Plant Name -->
+
+        <!-- Plant Description -->
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

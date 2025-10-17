@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".MyPlants">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <!-- Header -->
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/g"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                <!--menu btn-->
+                <ImageButton
+                        android:id="@+id/menubtn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/menu"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Menu Button"
+                        android:padding="8dp"/>
+
+                <TextView
+                        android:id="@+id/titleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User Guide"
+                        android:fontFamily="@font/fredokabold"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="16dp"/>
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <!--search bar-->
+
+
+        <!--Recyclerview 4 plants-->
+
+        <!--Add plant-->
+        <ImageButton
+                android:id="@+id/plantTypesButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/plant_icon"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="@+id/toolbar" app:layout_constraintTop_toTopOf="parent"
+                android:elevation="30dp" android:layout_marginTop="16dp" android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/toolbar" android:layout_marginBottom="16dp"/>
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        >
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical" android:layout_marginStart="20dp"
+                          android:layout_marginEnd="20dp" android:paddingStart="10dp" android:paddingEnd="10dp">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" android:id="@+id/linearLayout4"
+                            android:paddingTop="40dp">
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" app:srcCompat="@drawable/step1"
+                                android:id="@+id/imageView12"/>
+                        <TextView
+                                android:text="STEP 1:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/textView17"
+                                android:fontFamily="@font/fredokabold" android:textColor="@color/g"
+                                android:textSize="17dp" android:layout_marginTop="15dp"/>
+                        <TextView
+                                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content" android:id="@+id/textView18"
+                                android:fontFamily="@font/poppinsregular" android:textSize="14dp"
+                                android:layout_marginTop="7dp" android:textColor="@color/black"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:id="@+id/linearLayout3" app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+                            android:layout_marginTop="-100dp">
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" app:srcCompat="@drawable/step2"
+                                android:id="@+id/imageView13" android:layout_gravity="end"/>
+                        <TextView
+                                android:text="STEP 2:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/textView19"
+                                android:fontFamily="@font/fredokabold" android:textColor="@color/g"
+                                android:textSize="17dp" android:layout_marginTop="15dp" android:layout_gravity="end"/>
+                        <TextView
+                                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content" android:id="@+id/textView20"
+                                android:fontFamily="@font/poppinsregular" android:textSize="14dp"
+                                android:layout_marginTop="7dp" android:textColor="@color/black"
+                                android:layout_gravity="end"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="-160dp"
+                            android:id="@+id/linearLayout5">
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" app:srcCompat="@drawable/step3"
+                                android:id="@+id/imageView14"/>
+                        <TextView
+                                android:text="STEP 3:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/textView21"
+                                android:fontFamily="@font/fredokabold" android:textColor="@color/g"
+                                android:textSize="17dp" android:layout_marginTop="15dp"/>
+                        <TextView
+                                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content" android:id="@+id/textView22"
+                                android:fontFamily="@font/poppinsregular" android:textSize="14dp"
+                                android:layout_marginTop="7dp" android:textColor="@color/black"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                            app:layout_constraintEnd_toEndOf="parent" android:paddingBottom="100dp"
+                            android:layout_marginTop="120dp">
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" app:srcCompat="@drawable/step4"
+                                android:id="@+id/imageView15" android:layout_gravity="end"/>
+                        <TextView
+                                android:text="STEP 4:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/textView23"
+                                android:fontFamily="@font/fredokabold" android:textColor="@color/g"
+                                android:textSize="17dp" android:layout_marginTop="15dp" android:layout_gravity="end"/>
+                        <TextView
+                                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content" android:id="@+id/textView24"
+                                android:fontFamily="@font/poppinsregular" android:textSize="14dp"
+                                android:layout_marginTop="7dp" android:textColor="@color/black"
+                                android:layout_gravity="end"/>
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </ScrollView>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/addplant" android:id="@+id/imageButton"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="15dp" android:layout_marginBottom="15dp" android:scaleType="fitXY"
+                android:background="@android:color/transparent" android:visibility="gone"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--Sidebarmenu-->
+    <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/sidebar_header"
+            app:menu="@menu/sidebar_menu"
+            android:background="@color/soil"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            app:itemShapeAppearance="@style/menu_item_shape"
+            app:itemTextAppearance="@style/menu_font" app:itemBackground="@drawable/nav_item_bg"
+            app:itemVerticalPadding="5dp"
+
+            app:itemHorizontalPadding="15dp"
+            app:itemIconPadding="20dp"
+            app:itemShapeInsetStart="0dp"
+            app:itemShapeInsetEnd="0dp"
+            app:itemShapeInsetTop="5dp"
+            app:itemShapeInsetBottom="5dp"
+            app:divider="@color/soil"
+
+            app:itemShapeFillColor="@color/db"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

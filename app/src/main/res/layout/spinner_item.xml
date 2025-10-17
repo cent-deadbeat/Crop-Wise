@@ -1,0 +1,25 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+    <!-- Country Flag Icon -->
+    <ImageView
+            android:id="@+id/flagIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/country_flag" />
+
+    <!-- Country Code -->
+    <TextView
+            android:id="@+id/countryCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsregular" />
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/white">
+
+    <!-- Toolbar with custom title font -->
+    <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/g"
+            android:elevation="4dp"
+            app:titleTextAppearance="@style/ToolbarTitleStyle"
+            app:title="Plant Types Guide"
+            app:titleTextColor="@android:color/white"
+            app:navigationIcon="@drawable/ic_backbtn"
+            app:navigationIconTint="@android:color/white"/>
+
+    <!-- Tab Layout with custom tab text font -->
+    <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"
+            app:tabTextColor="@color/dg"
+            app:tabSelectedTextColor="@color/g"
+            app:tabIndicatorColor="@color/g"
+            app:tabIndicatorHeight="4dp"
+            app:tabMode="fixed"
+            app:tabGravity="fill"/>
+
+    <!-- ViewPager2 for swiping between fragments -->
+    <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+</LinearLayout>

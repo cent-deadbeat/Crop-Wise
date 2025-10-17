@@ -1,0 +1,11 @@
+<!-- res/drawable/fade_effect.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                    android:startColor="#00000000"
+            android:endColor="#FF000000"
+            android:angle="0" />
+        </shape>
+    </item>
+</layer-list>

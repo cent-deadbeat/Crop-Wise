@@ -1,0 +1,94 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/soil"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="30dp">
+
+    <TextView
+            android:text="SoilMate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textAlignment="center"
+            android:textColor="@color/g"
+            android:fontFamily="@font/fredokabold"
+            android:textSize="26dp"
+            android:layout_marginTop="50dp"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="15dp" android:layout_marginTop="25dp">
+
+        <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile"
+                android:background="@drawable/circle_bg"
+                android:padding="4dp"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="15dp">
+
+            <TextView
+                    android:id="@+id/header_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Casper"
+                    android:textColor="@color/g"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/fredokabold"/>
+
+            <TextView
+                    android:id="@+id/header_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="islejes@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/poppinsregular"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                <TextView
+                        android:id="@+id/header_plant_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/db"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/fredokabold"/>
+
+                <TextView
+                        android:text="Plants"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/db"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/fredokabold"
+                        android:paddingStart="5dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">SoilMate</string>
+    <string name="my_plants">My Plants</string>
+    <string name="my_acc">My Account</string>
+    <string name="user_guide">User Guide</string>
+    <string name="help">Help</string>
+    <string name="menu">Menu</string>
+    <string name="profile">Profile</string>
+    <string name="country_flag">Country Flags</string>
+    <string name="google_web_client_id">866621014283-6tnbrh5gvcgnhsbgrb8a3mvccipvevub.apps.googleusercontent.com
+    </string>
+
+    <string name="quick_tips_title">Quick Solutions</string>
+    <string-array name="watering_issues">
+        <item>➊ Check water reservoir level</item>
+        <item>➋ Ensure tubing isn\'t kinked</item>
+        <item>➌ Verify sensor is connected</item>
+    </string-array>
+
+    <string name="terms_and_conditions">
+        Welcome to SoilMate!\n\n
+        These Terms and Conditions govern your use of our application. By using SoilMate, you agree to be bound by these terms.\n\n
+        1. **Acceptance of Terms**\n
+        By accessing and using SoilMate, you acknowledge that you have read, understood, and agree to these Terms and Conditions.\n\n
+        2. **User Responsibilities**\n
+        - You must use this app in compliance with all applicable laws.\n
+        - Do not misuse, modify, or reverse-engineer the application.\n\n
+        3. **Privacy Policy**\n
+        - We respect your privacy. Your personal data is collected and used in accordance with our Privacy Policy.\n
+        - We do not sell or share your information with third parties without consent.\n\n
+        4. **App Functionality**\n
+        - SoilMate provides real-time monitoring of soil health and automated watering.\n
+        - We do not guarantee 100% accuracy of sensor data and recommend manual verification when needed.\n\n
+        5. **Limitation of Liability**\n
+        - We are not responsible for any damages caused by reliance on SoilMate’s data.\n
+        - The app is provided \"as is\" without warranties of any kind.\n\n
+        6. **Changes to Terms**\n
+        - We reserve the right to update these Terms and Conditions at any time.\n
+        - Continued use of the app means you accept any new terms.\n\n
+        7. **Termination**\n
+        - We may suspend or terminate your access to SoilMate if you violate these Terms.\n\n
+        By clicking \'Agree,\' you confirm that you have read and understood these Terms and Conditions.
+    </string>
+
+
+</resources>

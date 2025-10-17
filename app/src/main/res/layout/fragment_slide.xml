@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/rect1" android:id="@+id/constraintLayout">
+        <ImageView
+                android:layout_width="300dp"
+                android:layout_height="350dp" app:srcCompat="@drawable/girl" android:id="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                android:paddingTop="50dp" android:paddingBottom="50dp" android:contentDescription="TODO"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/constraintLayout2"
+            android:paddingTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" android:layout_marginTop="30dp">
+        <TextView
+                android:text="Taking care of plants has never been easier."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView5" android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:fontFamily="@font/fredokabold" android:textColor="@color/dg" android:textSize="23dp"
+                android:width="250dp"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+                android:text="With soil health monitoring and water system."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:fontFamily="@font/poppinsmedium" android:width="230dp" android:textAlignment="center"
+                android:textSize="15dp"
+                app:layout_constraintHorizontal_bias="0.497" app:layout_constraintTop_toBottomOf="@+id/textView5"
+                android:layout_marginTop="20dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/leaf" android:id="@+id/imageView3"
+            android:elevation="10dp"
+            app:layout_constraintTop_toTopOf="@+id/next"
+            app:layout_constraintBottom_toBottomOf="@+id/next"
+            app:layout_constraintStart_toStartOf="@+id/next" android:layout_marginStart="60dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+            android:text="GET STARTED"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" android:id="@+id/next"
+            android:width="250dp"
+            android:background="@drawable/button" android:backgroundTint="@null"
+            android:backgroundTintMode="@null" android:textColor="@color/white"
+            android:fontFamily="@font/poppinsbold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="35dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

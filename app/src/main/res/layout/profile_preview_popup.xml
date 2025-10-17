@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:padding="20dp"
+              android:background="@drawable/profile_bg"
+              android:orientation="vertical"
+              android:gravity="center">
+
+    <!-- Exit Button -->
+    <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ex_close"
+            app:tint="@android:color/darker_gray" />
+
+    <!-- Circular Image Preview -->
+    <ImageView
+            android:id="@+id/imagePreview"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_frame"
+            android:layout_marginBottom="15dp"/>
+
+    <!-- Set as Profile Button -->
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSetProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Set as Profile Picture"
+            android:backgroundTint="@color/g"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:textAllCaps="false" android:background="@drawable/changebtn_bg"
+            android:fontFamily="@font/fredokabold"/>
+
+</LinearLayout>
